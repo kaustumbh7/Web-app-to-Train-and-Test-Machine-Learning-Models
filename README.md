@@ -28,6 +28,6 @@ The working of web app is as-
 
 ![](images/4.png)
 
-5. Open your wandb account and track model training.
+5. Open your [Weights and Biases](https://www.wandb.com/) account and track model training.
 
 ![](images/5.png)
