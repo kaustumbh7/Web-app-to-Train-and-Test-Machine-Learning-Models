@@ -1,0 +1,734 @@
+{
+    "graph_0": {
+        "_type": "graph",
+        "format": "torch",
+        "nodes": [
+            {
+                "name": "conv1",
+                "id": 4842734424,
+                "class_name": "Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)",
+                "parameters": [
+                    [
+                        "weight",
+                        [
+                            64,
+                            3,
+                            7,
+                            7
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        112,
+                        112
+                    ]
+                ],
+                "num_parameters": [
+                    9408
+                ]
+            },
+            {
+                "name": "bn1",
+                "id": 4839405048,
+                "class_name": "BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+                "parameters": [
+                    [
+                        "weight",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "bias",
+                        [
+                            64
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        112,
+                        112
+                    ]
+                ],
+                "num_parameters": [
+                    64,
+                    64
+                ]
+            },
+            {
+                "name": "relu",
+                "id": 4842734480,
+                "class_name": "ReLU(inplace)",
+                "parameters": [],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        112,
+                        112
+                    ]
+                ],
+                "num_parameters": []
+            },
+            {
+                "name": "maxpool",
+                "id": 4842734536,
+                "class_name": "MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)",
+                "parameters": [],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        56,
+                        56
+                    ]
+                ],
+                "num_parameters": []
+            },
+            {
+                "name": "layer1.0",
+                "id": 4842734592,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            64,
+                            64,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            64,
+                            64,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            64
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        56,
+                        56
+                    ]
+                ],
+                "num_parameters": [
+                    36864,
+                    64,
+                    64,
+                    36864,
+                    64,
+                    64
+                ]
+            },
+            {
+                "name": "layer1.1",
+                "id": 4842734928,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            64,
+                            64,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            64,
+                            64,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            64
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            64
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        64,
+                        56,
+                        56
+                    ]
+                ],
+                "num_parameters": [
+                    36864,
+                    64,
+                    64,
+                    36864,
+                    64,
+                    64
+                ]
+            },
+            {
+                "name": "layer2.0",
+                "id": 4842735600,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (downsample): Sequential(\n    (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)\n    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  )\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            128,
+                            64,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            128,
+                            128,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "downsample.0.weight",
+                        [
+                            128,
+                            64,
+                            1,
+                            1
+                        ]
+                    ],
+                    [
+                        "downsample.1.weight",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "downsample.1.bias",
+                        [
+                            128
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        128,
+                        28,
+                        28
+                    ]
+                ],
+                "num_parameters": [
+                    73728,
+                    128,
+                    128,
+                    147456,
+                    128,
+                    128,
+                    8192,
+                    128,
+                    128
+                ]
+            },
+            {
+                "name": "layer2.1",
+                "id": 4842736048,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            128,
+                            128,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            128,
+                            128,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            128
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            128
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        128,
+                        28,
+                        28
+                    ]
+                ],
+                "num_parameters": [
+                    147456,
+                    128,
+                    128,
+                    147456,
+                    128,
+                    128
+                ]
+            },
+            {
+                "name": "layer3.0",
+                "id": 4842736720,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (downsample): Sequential(\n    (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)\n    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  )\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            256,
+                            128,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            256,
+                            256,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "downsample.0.weight",
+                        [
+                            256,
+                            128,
+                            1,
+                            1
+                        ]
+                    ],
+                    [
+                        "downsample.1.weight",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "downsample.1.bias",
+                        [
+                            256
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        256,
+                        14,
+                        14
+                    ]
+                ],
+                "num_parameters": [
+                    294912,
+                    256,
+                    256,
+                    589824,
+                    256,
+                    256,
+                    32768,
+                    256,
+                    256
+                ]
+            },
+            {
+                "name": "layer3.1",
+                "id": 4842737168,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            256,
+                            256,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            256,
+                            256,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            256
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            256
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        256,
+                        14,
+                        14
+                    ]
+                ],
+                "num_parameters": [
+                    589824,
+                    256,
+                    256,
+                    589824,
+                    256,
+                    256
+                ]
+            },
+            {
+                "name": "layer4.0",
+                "id": 4843053296,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (downsample): Sequential(\n    (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)\n    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  )\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            512,
+                            256,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            512,
+                            512,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "downsample.0.weight",
+                        [
+                            512,
+                            256,
+                            1,
+                            1
+                        ]
+                    ],
+                    [
+                        "downsample.1.weight",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "downsample.1.bias",
+                        [
+                            512
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        512,
+                        7,
+                        7
+                    ]
+                ],
+                "num_parameters": [
+                    1179648,
+                    512,
+                    512,
+                    2359296,
+                    512,
+                    512,
+                    131072,
+                    512,
+                    512
+                ]
+            },
+            {
+                "name": "layer4.1",
+                "id": 4843053744,
+                "class_name": "BasicBlock(\n  (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace)\n  (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n  (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n)",
+                "parameters": [
+                    [
+                        "conv1.weight",
+                        [
+                            512,
+                            512,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn1.weight",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "bn1.bias",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "conv2.weight",
+                        [
+                            512,
+                            512,
+                            3,
+                            3
+                        ]
+                    ],
+                    [
+                        "bn2.weight",
+                        [
+                            512
+                        ]
+                    ],
+                    [
+                        "bn2.bias",
+                        [
+                            512
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        512,
+                        7,
+                        7
+                    ]
+                ],
+                "num_parameters": [
+                    2359296,
+                    512,
+                    512,
+                    2359296,
+                    512,
+                    512
+                ]
+            },
+            {
+                "name": "avgpool",
+                "id": 4843054136,
+                "class_name": "AdaptiveAvgPool2d(output_size=(1, 1))",
+                "parameters": [],
+                "output_shape": [
+                    [
+                        4,
+                        512,
+                        1,
+                        1
+                    ]
+                ],
+                "num_parameters": []
+            },
+            {
+                "name": "fc",
+                "id": 4843055984,
+                "class_name": "Linear(in_features=512, out_features=2, bias=True)",
+                "parameters": [
+                    [
+                        "weight",
+                        [
+                            2,
+                            512
+                        ]
+                    ],
+                    [
+                        "bias",
+                        [
+                            2
+                        ]
+                    ]
+                ],
+                "output_shape": [
+                    [
+                        4,
+                        2
+                    ]
+                ],
+                "num_parameters": [
+                    1024,
+                    2
+                ]
+            }
+        ],
+        "edges": []
+    }
+}

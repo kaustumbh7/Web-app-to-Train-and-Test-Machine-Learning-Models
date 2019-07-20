@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'code.js' %}"></script>
+    <title>Heading</title>
+  </head>
+  <body>
+    <br>
+    <a href="index.html"><img class="logo" src="{% static 'bg.png'%}" alt=""></a>
+    <br>
+    <div class="container main">
+  <div class="jumbotron" id="holder">
+    <h3> 1. To monitor your model training, please create an ID on <a href="https://www.wandb.com/">Wandb</a> and login.</h3>
+    <h3> 2. Next, refer <a href="https://app.wandb.ai/profile" font-size="100px">here</a> and generate a new API key and paste it below.</h3>
+    <h3> 3. Click on Train Model and then you can track model training in your Wandb profile. </h3>
+    <h3> 4. Once training is complete, download the model by clicking on the download button. </h3>
+    <br>
+    <br>
+
+      <center>
+        <form action="{% url 'train_next_ic' %}" method="post">
+          {% csrf_token %}
+          <label for="team_name">Wandb API Token: </label>
+            <input id="team_name" type="text" name="wandb_token">
+            <input type="submit" value="Train Model">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="submit" name="press" value="pressed" class="button btn btn-default" onclick="location.href='{% url 'serve_model' %}'"> Download Model </button>
+        </form>
+      </center>
+  </div>
+</div>
+
+
+
+  </body>
+</html>

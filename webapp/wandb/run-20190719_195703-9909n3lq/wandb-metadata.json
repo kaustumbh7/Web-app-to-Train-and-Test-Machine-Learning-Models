@@ -1,0 +1,20 @@
+{
+    "root": "/Users/KJ/Desktop/djangogirls/webapp",
+    "program": "deploy/image_classification/pytorch_classifier.py",
+    "startedAt": "2019-07-19T19:57:03.848853",
+    "host": "Kaustumbhs-MacBook-Air.local",
+    "username": "KJ",
+    "os": "Darwin-18.2.0-x86_64-i386-64bit",
+    "python": "3.7.3",
+    "executable": "/Users/KJ/anaconda3/envs/pytorch/bin/python",
+    "cpu_count": 4,
+    "args": [
+        "e8941bb183fa92db6acec62f1743214da81094f8"
+    ],
+    "state": "killed",
+    "jobType": null,
+    "mode": "run",
+    "project": "cloud",
+    "heartbeatAt": "2019-07-19T19:57:10.762490",
+    "exitcode": 255
+}

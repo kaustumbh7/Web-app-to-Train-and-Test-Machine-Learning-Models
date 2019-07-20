@@ -1,0 +1,79 @@
+2019-07-20 17:46:19,134 DEBUG   MainThread:8384 [wandb_config.py:_load_defaults():82] no defaults not found in config-defaults.yaml
+2019-07-20 17:46:19,150 DEBUG   MainThread:8384 [git_repo.py:repo():30] git repository is invalid
+2019-07-20 17:46:19,212 DEBUG   MainThread:8384 [run_manager.py:__init__():483] Initialized sync for cloud/s0o0jrm2
+2019-07-20 17:46:19,222 INFO    MainThread:8384 [run_manager.py:wrap_existing_process():1044] wrapping existing process 8375
+2019-07-20 17:46:19,223 WARNING MainThread:8384 [io_wrap.py:register():103] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2019-07-20 17:46:19,245 DEBUG   MainThread:8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): pypi.org:443
+2019-07-20 17:46:19,902 DEBUG   MainThread:8384 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 32904
+2019-07-20 17:46:20,068 INFO    MainThread:8384 [run_manager.py:init_run():860] system metrics and metadata threads started
+2019-07-20 17:46:20,068 INFO    MainThread:8384 [run_manager.py:init_run():894] upserting run before process can begin, waiting at most 10 seconds
+2019-07-20 17:46:20,083 DEBUG   Thread-13 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:20,146 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/output.log
+2019-07-20 17:46:20,442 DEBUG   Thread-13 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 459
+2019-07-20 17:46:20,448 INFO    Thread-13 :8384 [run_manager.py:_upsert_run():956] saving patches
+2019-07-20 17:46:20,448 INFO    Thread-13 :8384 [run_manager.py:_upsert_run():958] saving pip packages
+2019-07-20 17:46:20,449 INFO    Thread-13 :8384 [run_manager.py:_upsert_run():960] initializing streaming files api
+2019-07-20 17:46:20,451 INFO    Thread-13 :8384 [run_manager.py:_upsert_run():967] unblocking file change observer, beginning sync with W&B servers
+2019-07-20 17:46:20,452 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-metadata.json
+2019-07-20 17:46:20,453 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/code
+2019-07-20 17:46:20,454 INFO    MainThread:8384 [run_manager.py:wrap_existing_process():1061] informing user process we are ready to proceed
+2019-07-20 17:46:20,463 INFO    MainThread:8384 [run_manager.py:_sync_etc():1144] entering loop for messages from user process
+2019-07-20 17:46:20,467 DEBUG   Thread-14 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:20,965 DEBUG   Thread-14 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 764
+2019-07-20 17:46:20,986 DEBUG   Thread-14 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:46:21,145 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/output.log
+2019-07-20 17:46:21,145 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/requirements.txt
+2019-07-20 17:46:21,146 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/config.yaml
+2019-07-20 17:46:21,180 DEBUG   Thread-15 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:21,180 DEBUG   Thread-2  :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:21,563 DEBUG   Thread-2  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 824
+2019-07-20 17:46:21,579 DEBUG   Thread-16 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:21,583 DEBUG   Thread-15 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 760
+2019-07-20 17:46:21,595 DEBUG   Thread-15 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:46:21,624 DEBUG   Thread-14 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/wandb-metadata.json?Expires=1563644840&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=fSzg3CwaruRCf%2F0LsinwlJctd5ARLjzaZHPrG02bEtQpmcDR2Fcw%2BdX9KqEq3jGU1nFIAmD3UDK7M3WcprXtSy%2BY91G%2FnH7%2FaB2i%2FajoNJ7RtQhdRqXjIAAGB4ec1YdYOmto2YZbF3JPTesxbQR2nA5dXUAG0klgiI17sOShl5WX6ajiS3e0VqI60smLcrhEoa44YoekNiCTdTxfev%2Bz1xZyRX3e1lXjXeQytbe2s%2FUHrAC4zyxc7nclLIt1Yo1VZUb%2FQkH7sF5jmAuJ1VMoQrLDnWFERjnz9nF7FrtxDSSEhSbG4wkOPRVsDWXoE%2FN5o7UMEsyb9o2yQhu%2BexN8lw%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:46:22,012 DEBUG   Thread-16 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 734
+2019-07-20 17:46:22,029 DEBUG   Thread-16 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:46:22,169 DEBUG   Thread-15 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/requirements.txt?Expires=1563644841&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=ZzPewmvAz9lqvv3fSmYaQ7NsoQmiYFXbO%2FurPl%2Bi0PWRm7Qa7EFzb%2BNxih6zfjkl3FXJ863mbGeuECQGrTedHIqRfsX0aSWZpKj0GREHjXUcD743epfpgPbzzARz%2BKozCAAGhQU9h2bainOXxq2AmpQolZ%2FB18rd9XynCIENgETUr8%2BiMXg%2BZ9hqvAblloxMr%2BIpqNtA3sIcpRP8ouK%2BA5PIhUj4zEdlYEwec0vcAK9MxdGFrJV7tgHgRzE3WkVamHyjmA7Fs34Tnivl4RZ1M7yKhh%2FMYRGjq5lbp1gGyuvnUF1QuW5Qcv4pkSc%2BYrB5k5vev7Ak8OW1spjIRWX%2BDg%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:46:22,588 DEBUG   Thread-6  :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:46:22,592 DEBUG   Thread-16 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/config.yaml?Expires=1563644841&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=lSamI4fg6zt1uaZBU5alOxWrHgn3Y8O6SHbtGlZzU6Smk3mEzyWupJW0l%2BcDqMcXkEuKQCmuX6RiuI3ivE6WVnYjsO04UXyQAOtwA8ddx8kMm3QVq9EZ1me9CUQ2YZmqDq5pk3Z9XTT313xyTdFVE4aUVN1iFpB6p47DlvMIk7TVwoXULqaMJuwue90Nq9K1glwuXL0ibiGiC14WwNAJWOz3yD7tMolwiUyyhETSRc1iOvroVIm5v79%2Fm5iKCUnCn9pqHMHySP5ZS1UjAlHLpbZFZPy24T%2F2RSaZAa8OPqL%2FxPGTfFooGV3eExBhDTwiolOm92WWrdIAe0Ygk8jGFA%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:46:23,022 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 311
+2019-07-20 17:46:23,152 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-summary.json
+2019-07-20 17:46:24,154 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-summary.json
+2019-07-20 17:46:26,994 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 311
+2019-07-20 17:46:36,190 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-metadata.json
+2019-07-20 17:46:49,218 INFO    Thread-2  :8384 [run_manager.py:_on_file_created():619] file/dir created: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-events.jsonl
+2019-07-20 17:46:49,644 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 311
+2019-07-20 17:46:52,234 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-metadata.json
+2019-07-20 17:47:08,276 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-metadata.json
+2019-07-20 17:47:19,319 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-events.jsonl
+2019-07-20 17:47:19,635 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 311
+2019-07-20 17:47:20,544 INFO    MainThread:8384 [run_manager.py:_sync_etc():1200] process received interrupt signal, shutting down
+2019-07-20 17:47:20,549 INFO    MainThread:8384 [run_manager.py:_sync_etc():1253] closing log streams and sending exitcode to W&B
+2019-07-20 17:47:20,555 INFO    MainThread:8384 [run_manager.py:shutdown():974] shutting down system stats and metadata service
+2019-07-20 17:47:21,170 INFO    MainThread:8384 [run_manager.py:shutdown():983] stopping streaming files and file change observer
+2019-07-20 17:47:21,326 INFO    Thread-2  :8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-events.jsonl
+2019-07-20 17:47:21,328 INFO    MainThread:8384 [run_manager.py:_on_file_modified():630] file/dir modified: /Users/KJ/Desktop/djangogirls/webapp/wandb/run-20190720_174614-s0o0jrm2/wandb-metadata.json
+2019-07-20 17:47:21,400 DEBUG   Thread-19 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:47:21,411 DEBUG   MainThread:8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:47:21,416 DEBUG   Thread-20 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:47:21,792 DEBUG   Thread-20 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 789
+2019-07-20 17:47:21,801 DEBUG   Thread-20 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:47:21,868 DEBUG   Thread-19 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 742
+2019-07-20 17:47:21,876 DEBUG   MainThread:8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 824
+2019-07-20 17:47:21,877 DEBUG   Thread-19 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:47:21,886 DEBUG   Thread-21 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:47:21,895 DEBUG   Thread-22 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-07-20 17:47:22,227 DEBUG   Thread-22 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 768
+2019-07-20 17:47:22,235 DEBUG   Thread-21 :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 763
+2019-07-20 17:47:22,243 DEBUG   Thread-22 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:47:22,254 DEBUG   Thread-21 :8384 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-07-20 17:47:22,387 DEBUG   Thread-20 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/wandb-metadata.json?Expires=1563644901&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=D%2FNvbQh3qk%2FKl14zjxHzwxSUvIocRvooKSubc76%2FAaLDbG%2B4NE37QnQN94BYoKn0GKJCkwxZY6uLS%2B19IqdL4Ukoaprqzroe%2FW9Ce%2B7c%2BIwaljxRgJdOCbhf9%2FqR7%2B4iMb0MGAzGU6vlO0i7s4lK3wJKL3IJnEJF0iDtVa8ZLd%2FAQp7deOPr12cPVDTmRNxEO%2FBjGvFrIYGM0LQROfhkS%2FG8LO%2BYcoatPi3p%2BKmR0mkzJ4f94o7RNdyjpYPjLtSX0JrVSbFyjIWsrBp8yIJTYFIYf8Hta7iF1HRt8fZ6vF8nL6opt3L5EhWYxPJVyUozYcmSKiIk96a83VEazc3Hsg%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:47:22,402 DEBUG   Thread-19 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/output.log?Expires=1563644901&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=X76hv3mcRAJWLJWJlrybB4aFPDooG7E%2FsIwrwJuCOGcoy0V6IK2dGN4kOylmRuGpTDhMwe%2BapN1MrfSnwg%2F2EqaaLk3LSzL2acR5cYB7lP%2FKSlr6IxsWw%2BOifcYo4D%2B2x8qoNUSvDX%2FyK5bwYwrbvjkXC3YHw4vTQ5DFKqQOeeOvTtFu47s76nAo4L0iQKjpH7VKvrIvnmKK7QCWNRkQ4wXQajDiVqTIGYrHayxX1tyhV6YaoErZcPWlneF4ny2c4F5f9V0TFTLkftemlKF71AV%2FpFe1Q5FcrqGGtUhiKLFbDpn%2FAr73p2EQP1tOWVeJvVJEvc0xXp5SLPvehIVNsQ%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:47:22,706 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 311
+2019-07-20 17:47:22,859 DEBUG   Thread-21 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/config.yaml?Expires=1563644902&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Eh1tDXGJkG6eakQx%2FylaRXUBqcx3oSnozYCwipmuqcO9eSsKkwYQaIcLy6HOuVEs02h6JjQWscfOXhtKGDYoAZ6O%2BRV87dt7hmUV6g0OYL95BMJ9csXQqgDhcglmiQWFAVzFVX5Byi1wk%2F6fIUWdAUP8Hbk5grjhD7KIPZPfMCIMRQmI%2FWkCcAr5pY9LiiF1KCjSpB177mi8oNdMhnCWUw8lO7nSNDpAqW0hik3%2B2owH%2FRp3UN1tOyiky%2BGbf7QGn%2BS3goDee6%2BdU3bnBP1UpKv794M%2F0SGciPRvw4ocl3fHdwatXqJMw69WI4oyIaAci3yFMj8LnOvkWgotpJLs3Q%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:47:22,971 DEBUG   Thread-22 :8384 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kaustumbh7/cloud/s0o0jrm2/wandb-summary.json?Expires=1563644902&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=mBFChMdgUqxmYHU6KraVTIHBYfJ9%2FF0D5WG%2B2WHjrQC7OS4796Wm0Guom7g%2BoBDErzyzLEgWrjfjO%2F%2FiKPXqgnmlJwc%2BdtFGYKOqCThUZsSMMuS6XmvmlWLU63oXkdD4kxUuBmjxl7%2BT50Xrzpl4qzP8eQTt%2FHCXMb7QK2%2BqmcP53uE1LSmsBEiwMM81s2l7x%2FMV1ys0hqXPijX%2BQj8lWuXUaeOmtLOOU1G9hcmqcB2dIg9ujGwkmrpLB%2FFDq%2BtCLKS4eAwGScFV6L5K9AWe90dVnB2T8%2BZrZReUZUJ7af10eJG5HQNgisRpRMG02TgjTsHsyd1VbR5nU3OwWmyrZA%3D%3D HTTP/1.1" 200 0
+2019-07-20 17:47:22,999 DEBUG   Thread-6  :8384 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /kaustumbh7/cloud/s0o0jrm2/file_stream HTTP/1.1" 200 310
+2019-07-20 17:47:23,001 INFO    MainThread:8384 [run_manager.py:_sync_etc():1272] rendering summary
+2019-07-20 17:47:23,001 INFO    MainThread:8384 [run_manager.py:_sync_etc():1303] syncing files to cloud storage
+2019-07-20 17:47:24,013 INFO    MainThread:8384 [run_manager.py:_sync_etc():1318] syncing complete: https://app.wandb.ai/kaustumbh7/cloud/runs/s0o0jrm2
+2019-07-20 17:47:24,013 INFO    MainThread:8384 [s0o0jrm2:run_manager.py:_sync_etc():1318] syncing complete: https://app.wandb.ai/kaustumbh7/cloud/runs/s0o0jrm2

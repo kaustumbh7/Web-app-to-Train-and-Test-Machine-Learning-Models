@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'code.js' %}"></script>
+    <title>Heading</title>
+  </head>
+  <body>
+    <br>
+    <a href="index.html"><img class="logo" src="{% static 'bg.png'%}" alt=""></a>
+    <br>
+    <div class="container main">
+  <div class="jumbotron" id="holder">
+    <h1 class='main_heading'> Provide with your training data</h1>
+    <br>
+    <br>
+
+      <center>
+  		<form method="post" enctype="multipart/form-data">
+    		{% csrf_token %}
+    		<input type="file" name="document" style='width: 20%;'>
+    		<br>
+    		<button type="submit"> Upload </button>
+        <br>
+        <br>
+        <input type="button" name="next" value="    Next    " onclick="location.href='{% url 'upload_next_ic' %}'">
+  		</form>
+        <br>
+        <br>
+        <br>
+      </center>
+    
+    <br>
+    <br>
+    <br>
+    <h2 class="result"></h2>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
+
+
