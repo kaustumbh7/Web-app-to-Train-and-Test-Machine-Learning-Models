@@ -7,5 +7,5 @@ Currently supports the following functionalities-
 3. Live tracking of model metrics like- training loss, gradients etc. using [Weights and Biases](https://www.wandb.com/)
 
 Future work-
-1. Add hyper-paramter tuning to enable the user to configure his model.
+1. Add hyper-parameter tuning to enable the user to configure his model.
 2. Improve front-end.
