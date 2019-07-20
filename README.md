@@ -9,3 +9,6 @@ Currently supports the following functionalities-
 Future work-
 1. Add hyper-parameter tuning to enable the user to configure his model.
 2. Improve front-end.
+
+The working of web app is as-
+
