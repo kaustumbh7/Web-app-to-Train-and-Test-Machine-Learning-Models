@@ -22,7 +22,6 @@ The working of web app is as-
 
 3. Upload your training data in a zip file.
 
-![](images/3.png)
 
 4. Follow the instuctions as shown.
 
