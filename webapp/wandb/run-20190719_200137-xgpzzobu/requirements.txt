@@ -6,7 +6,7 @@ cffi==1.12.3
 chardet==3.0.4
 click==7.0
 cycler==0.10.0
-django==2.2.3
+django==2.2.10
 docker-pycreds==0.4.0
 gitdb2==2.0.5
 gitpython==2.1.11
