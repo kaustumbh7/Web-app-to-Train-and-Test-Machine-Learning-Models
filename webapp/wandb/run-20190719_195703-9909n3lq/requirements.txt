@@ -27,7 +27,7 @@ psutil==5.6.3
 pycparser==2.19
 pyparsing==2.4.0
 python-dateutil==2.8.0
-pyyaml==5.1.1
+pyyaml==5.4
 requests==2.22.0
 rx==1.6.1
 sentry-sdk==0.10.2
