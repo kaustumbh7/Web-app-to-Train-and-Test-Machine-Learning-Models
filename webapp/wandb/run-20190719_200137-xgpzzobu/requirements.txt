@@ -44,4 +44,4 @@ torchvision==0.3.0
 urllib3==1.25.3
 wandb==0.8.5
 watchdog==0.9.0
-wheel==0.33.4
+wheel==0.38.1
